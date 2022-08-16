@@ -1,0 +1,14 @@
+<div class="searched-words">
+	<div class="searched-word">
+		<div class="searched-word-contents-count">
+			<%= @tags.count%>つヒットしました！！！
+		</div>
+		<div class="searched-word-contents">
+			<% @tags.each do |tag| %>
+				<div class="searched-word-content">
+					<%= link_to tag.name,tag_path(tag.id)%>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

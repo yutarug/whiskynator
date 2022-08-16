@@ -1,0 +1,10 @@
+<div class="bottle-show-space">
+	<div class="bottle-show-image"></div>
+	<div class="bottle-show-discription">
+		<h3 class="bottle-show-name text"><%= @bottle.bottle_name%></h3>
+		<p class="bottle-show-price text"><%= @bottle.price%>円</p>
+		<p class="bottle-show-area text"><%= @bottle.area.name%></p>
+		<p class="bottle-show-explanation text"><%= @bottle.introduction%></p>
+	</div>
+	<%= render 'bottles/under_bottles', bottles: @recommending_bottles %>
+</div>

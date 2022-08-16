@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bottle_id: 1
+  taste_id: 1
+
+two:
+  bottle_id: 1
+  taste_id: 1

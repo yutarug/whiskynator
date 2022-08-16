@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Whiskynator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <h1 class="menu-name text"><%=link_to "Bar Bronks",root_path%></h1>
+    </div>
+    <div class="address-information">
+      <p class="address-information-text text">〒650-0025 神戸市中央区相生町2丁目2-14 新神戸ビルB1F</p>
+    </div>
+    <div class="search-space">
+        <h1 class="search-title text">Whisky Menu</h3>
+        <p class="search-text text">あああ</p>
+        <div class="form-space">
+            <%= form_with url: "searched_word",method: :get do |f| %>
+                <div class="form-text_field">
+                    <%= f.text_field :search_word,class:"form-text_field_field",:placeholder => "Search anything..."%>
+                </div>
+            <% end %>
+        </div>
+    </div>
+      <%= yield %>
+  </body>
+</html>

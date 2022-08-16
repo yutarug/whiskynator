@@ -1,0 +1,11 @@
+<div class="tastes-area">
+	<% @tastes.each do |taste| %>
+	<div class="tastes-area-taste">
+		<div class="tastes-area-taste-image middle-box",id="taste-image-<%=taste.id%>">
+			<div class="tastes-area-taste-image-box">
+				<%= link_to taste.name,taste_path(taste.id),{class:"tastes-area-taste-image-box-text"}%>
+			</div>
+		</div>
+	</div>
+	<% end %>
+</div>

@@ -1,0 +1,370 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+.text{
+   text-align: center;
+}
+.top-bar{
+   width: 100%;
+   height: 50px;
+   background-color: red;
+   text-align: center;
+}
+.address-information{
+   width: 100%;
+   height: 40px;
+   background-color: #00829f;
+}
+.address-information-text{
+   color: white;
+   text-align: center;
+   line-height: 40px;
+}
+.search-space{
+   width: 100%;
+   background-color: #fcc41c;
+   padding: 5px 0px 20px;
+}
+.menu-name{
+}
+.top-menu{
+   width: 100%;
+   margin: 0 auto;
+}
+.search-title{
+   font-family:'Bangers', cursive;
+}
+.search-text{
+   font-family: 'IM Fell DW Pica SC', serif;
+}
+.form-space{
+   width: 100%;
+}
+.form-text_field{
+   width: 300px;
+   margin: 0 auto;
+}
+.form-text_field_field{
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.search-way-space{
+   width: 100%;
+   height: 300px;
+   background-color: green;
+}
+.search-way-space-first-stage{
+   width: 100%;
+   display: flex;
+}
+.search-by-taste{
+   width: 50%;
+   height: 150px;
+   background-color: burlywood;
+}
+.by-image{
+   width: 150px;
+   height: 150px;
+   background-color: blue;
+   margin: 0 auto;
+   border-radius: 50%;
+}
+.search-by-taste-image{
+   background-image: url(resized_price.png);
+   position: relative;
+}
+.image-box{
+   width: 100px;
+   height: 30px;
+   margin: auto;
+   background-color: #fcc41c;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+.search-by-taste-text{
+/*   line-height: 150px;*/
+   color: black;
+   text-decoration: none;
+}
+.search-by-area{
+   width: 50%;
+   height: 150px;
+   background-color: hotpink;
+}
+.search-by-area-image{
+   background-image: url(resized_price.png);
+   position: relative;
+}
+.search-by-area-text{
+   color: black;
+   text-decoration: none;
+}
+.search-way-space-second-stage{
+   width: 100%;
+}
+.range-of-price{
+   width: 50%;
+   height: 150px;
+   margin: 0 auto;
+   background-color: orangered;
+}
+.range-of-price-image{
+   background-image: url(resized_price.png);
+   position: relative;
+}
+.range-of-price-text{
+   color: black;
+   text-decoration: none;
+}
+.about-Bronks{
+   width: 100%;
+   height: 300px;
+   background-color: gray;
+}
+
+.about-Bronks-title{
+   font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.about-Bronks-text{
+   font-family: 'IM Fell DW Pica SC', serif;
+}
+
+
+
+.tastes-area{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+.tastes-area-taste{
+   width: 50%;
+   height: 150px;
+   background-color: blue;
+   margin: 5px 0 0 0;
+}
+.tastes-area-taste:nth-child(3n){
+   background-color: yellow;
+}
+.middle-box{
+   width: 150px;
+   height: 150px;
+   margin: 0 auto;
+   background-color: orange;
+   border-radius: 50%;
+   background-image: url(resized_price.png);
+   position: relative;
+}
+.tastes-area-taste-image-box{
+   width: 100px;
+   height: 30px;
+   margin: auto;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: #fcc41c;
+}
+
+.tastes-area-taste-image-box{
+   text-align: center;
+   text-decoration: none;
+}
+
+/*一旦id放置*/
+
+/*#taste-image-2{
+   width: 100%;
+}*/
+/*.stage{
+   width: 100%;
+   height: 100px;
+   display: flex;
+}
+.taste{
+   width: 50%;
+}
+
+.taste-vanilla{
+   background-color: lightsalmon;
+}
+.taste-sherry{
+   background-color: green;
+}
+.taste-citrus{
+   background-color: yellow;
+}
+.taste-spicy{
+   background-color: blue;
+}
+.taste-smoke{
+   background-color: purple;
+
+}
+.taste-heavy-smoke{
+   background-color: orange;
+
+}*/
+
+
+.taste-area{
+   width: 100%;
+/*   height: 300px;*/
+   background-color: pink;
+}
+.taste-image{
+   width: 60%;
+   height: 150px;
+   background-image:  url(resized_price.png);
+   margin: 0 auto;
+}
+
+.taste-bottels{
+   width: 100%;
+   background-color: burlywood;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 20px 0 0 0;
+}
+.bottle-image{
+   width: 50%;
+   height: 200px;
+   background-color: green;
+}
+.bottle-image:nth-child(odd){
+   background-color: yellow;
+}
+.bottle-photo{
+   width: 50%;
+   height: 150px;
+   background-image:  url(resized_price.png);
+   margin: 0 auto 0;
+}
+
+.bottle-show-space{
+   width: 100%;
+   background-color: blue;
+}
+.bottle-show-image{
+   width:50%;
+   height: 300px;
+   margin: 0 auto;
+   background-color: yellow;
+}
+.bottle-show-discription{
+   width: 100%;
+   background-color: burlywood;
+}
+.bottle-show-name{
+   width: 50%;
+   margin: 0 auto;
+}
+
+.bottle-follow{
+   width: 100%;
+   background-color: hotpink;
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.bottle-show-recommending-bottle{
+   width: 50%;
+   height: 100px;
+   background-color: green;
+}
+.bottle-show-recommending-bottle:nth-child(2n){
+   background-color: brown;
+}
+.bottle-show-recommending-bottle-image{
+   width: 80%;
+   height: 50px;
+   margin: 0 auto;
+   background-color: lightblue;
+}
+
+.areas-space{
+   width: 100%;
+   background-color: blue;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.areas-space-area{
+   width: 50%;
+   height: 150px;
+   background-color: yellow;
+}
+.areas-space-area:nth-child(3n){
+   background-color: green;
+}
+.areas-space-area-box{
+   width: 80%;
+   height: 100%;
+   margin: 0 auto;
+   background-color: pink;
+}
+.areas-space-area-box-image{
+   width: 100%;
+   height: 100px;
+   margin: 0 auto;
+   background-color: gray;
+}
+
+.searched-words{
+   width: 100%;
+   height:400px;
+   background-color: green;
+}
+.searched-word{
+   width: 60%;
+   height: 400px;
+   margin: 0 auto;
+   background-color: blue;
+}
+.searched-word-contents-count{
+   width: 100%;
+   height: 50px;
+   background-color: orange;
+   text-align: center;
+   line-height: 50px;
+}
+.searched-word-contents{
+   width: 100%;
+   height: 300px;
+   background-color: lightblue;
+   display: flex;
+   flex-wrap: wrap;
+}
+.searched-word-content{
+   width: 50%;
+   height: 30px;
+   background-color: hotpink;
+   text-align: center;
+}
+
+
