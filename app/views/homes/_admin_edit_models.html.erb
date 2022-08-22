@@ -1,0 +1,17 @@
+<div class="admin_edit_models">
+	<div class="admin_edit_model">
+		<% lists.each do |list| %>
+		<div class="admin_edit_model_each_list">
+			<% if params[:controller]=="bottles" %>
+				<%= link_to list.name,edit_bottle_path(list.id)%>
+			<% elsif params[:controller]=="tastes" %>
+				<%= link_to list.name,edit_taste_path(list.id)%>
+			<% elsif params[:controller]=="areas" %>
+				<%= link_to list.name,edit_area_path(list.id)%>
+			<% elsif params[:controller]=="tags" %>
+				<%= link_to list.name,edit_tag_path(list.id)%>
+			<% end %>
+		</div>
+		<% end %>
+	</div>
+</div>

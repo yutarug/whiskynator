@@ -1,4 +1,6 @@
 class Bottle < ApplicationRecord
+    has_one_attached :image
+
     belongs_to :area
     belongs_to :range_of_price
     belongs_to :mature
