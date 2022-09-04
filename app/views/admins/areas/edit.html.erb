@@ -1,0 +1,6 @@
+<%= form_with model: @area,url:admins_area_path(@area.id),method: :patch do |f| %>
+	<%= f.file_field :image %>
+	<%= f.text_field :name %>
+	<%= f.text_area :explanation%>
+	<%= f.submit %>
+<% end %>

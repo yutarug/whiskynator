@@ -50,9 +50,11 @@
    width: 100%;
    background-color: #fcc41c;
    padding: 5px 0px 20px;
+   margin: 0px 0px 20px;
 }
 .menu-name{
    color: white;
+   font-family: 'Vollkorn', serif;
 }
 .menu-name-link{
    text-decoration: none;
@@ -83,6 +85,7 @@
 .search-way-space{
    width: 100%;
    height: 300px;
+   margin: 20px 0px;
 /*   background-color: green;*/
 }
 .search-way-space-first-stage{
@@ -159,11 +162,12 @@
 }
 
 .about-Bronks-title{
-   font-family: 'IM Fell DW Pica SC', serif;
+/*   font-family: 'IM Fell DW Pica SC', serif;*/
+   font-family: 'Vollkorn', serif;
 }
 
 .about-Bronks-text{
-   font-family: 'IM Fell DW Pica SC', serif;
+/*   font-family: 'IM Fell DW Pica SC', serif;*/
 }
 
 
@@ -255,7 +259,10 @@
    background-image:  url(resized_price.png);
    margin: 0 auto;
 }
-
+.taste-area-text{
+   width: 300px;
+   margin: 0 auto;
+}
 .taste-bottels{
    width: 100%;
 /*   background-color: burlywood;*/
@@ -344,9 +351,27 @@
    width: 250px;
    height: 150px;
    margin: 0 auto;
+/*   background-color: red;*/
+/*   background-image: url(resized_whisky_photo.png);*/
+}
+#mature_image_1{
    background-image: url(resized_whisky_photo.png);
 }
-
+#mature_image_2{
+   background-image: url(resized_whisky_photo.png);
+}
+#mature_image_3{
+   background-image: url(resized_whisky_photo.png);
+}
+#mature_image_4{
+   background-image: url(resized_whisky_photo.png);
+}
+#mature_image_5{
+   background-image: url(resized_whisky_photo.png);
+}
+#mature_image_6{
+   background-image: url(resized_whisky_photo.png);
+}
 .searched-words{
    width: 100%;
    height:400px;
@@ -385,14 +410,71 @@
 /*   background-color: blue;*/
 }
 .admin_edit_model{
-   width: 50%;
+   width: 400px;
 /*   background-color: green;*/
    margin: 0 auto;
    display: flex;
    flex-wrap: wrap;
+   background-color: blue;
 }
 .admin_edit_model_each_list{
    width: 50%;
    height: 100px;
-/*   background-color: yellow;*/
+   background-color: yellow;
 }
+.admin_edit_model_each_list:nth-child(odd){
+   background-color: greenyellow;
+}
+.bottle-edit{
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+.bottle-edit-form{
+   width: 50%;
+}
+.other-bottles{
+   width: 50%;
+}
+.admin_bottles_index{
+   width: 80%;
+/*   background-color: blue;*/
+   margin: 0 auto;
+}
+.admin_bottles_index_foreign_keys{
+   width: 100%;
+   height: 300px;
+/*   background-color: orange;*/
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+.admin_bottles_index_new{
+   width: 100%;
+/*   background-color: red;*/
+   margin: 0 auto;
+}
+.admin_bottles_index_area_id{
+   width: 50%;
+}
+.admin_bottles_index_mature_id{
+   width: 50%;
+}
+
+.admin-toppage{
+   width: 80%;
+   height:400px;
+   margin: 0 auto;
+/*   background-color: red;*/
+}
+.admin-options{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+.admin-option{
+   width: 50%;
+   height: 100px;
+}
+

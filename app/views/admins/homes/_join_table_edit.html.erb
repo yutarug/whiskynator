@@ -1,0 +1,54 @@
+<div class="bottle-edit">
+	<div class="bottle-edit-form">
+		<%= form_with model: list,url:admins_tag_path(list.id),method: :patch do |f| %>
+			<%= f.file_field :image %>
+			<%= f.text_field :name %>
+			<%= f.text_area :explanation%>
+			<%= f.submit %>
+		<% end %>
+	</div>
+	<div class="other-bottles">
+		<table>
+			<tr>
+				<th>ボトル名</th>
+				<th>フォロー</th>
+			</tr>
+			<%@bottles.each do |bottle|%>
+				<tr>
+					<td><%=bottle.name%></td>
+					<%if list.following?(bottle)%>
+						<td>
+							<%if params[:controller]=="admins/tags"%>
+								<%= form_with  url:admins_bottle_tag_path(list.id), method: :delete do |f| %>
+									<%= hidden_field_tag :bottle_id, bottle.id %>
+									<%= f.submit 'Unfollow'%>
+								<%end%>
+							<%elsif params[:controller]=="admins/tastes"%>
+								<%= form_with  url:admins_bottle_taste_path(list.id), method: :delete do |f| %>
+									<%= hidden_field_tag :bottle_id, bottle.id %>
+									<%= f.submit 'Unfollow'%>
+								<%end%>
+							<% end %>
+						</td>
+					<%else%>
+						<td>
+							<%if params[:controller]=="admins/tags"%>
+								<%= form_with url:admins_bottle_tags_path do |f|%>
+									<%= hidden_field_tag :bottle_id, bottle.id %>
+									<%= hidden_field_tag :tag_id, list.id %>
+									<%= f.submit 'follow'%>
+								<%end%>
+							<%elsif params[:controller]=="admins/tastes"%>
+								<%= form_with url:admins_bottle_tastes_path do |f|%>
+									<%= hidden_field_tag :bottle_id, bottle.id %>
+									<%= hidden_field_tag :taste_id, list.id %>
+									<%= f.submit 'follow'%>
+								<%end%>
+							<% end %>
+						</td>
+					<%end%>
+				</tr>
+			<%end%>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<div class="areas-space">
+	<% lists.each do |list|%>
+	<div class="areas-space-area">
+		<div class="areas-space-area-box">
+			<div class="areas-space-area-box-image">
+				<%= image_tag list.image.variant(resize:"250x150")%>
+			</div>
+			<% if params[:controller]=="publics/areas"%>
+				<h5 class="text"><%= link_to list.name,area_path(list.id)%></h5>
+			<% elsif params[:controller]=="publics/tastes"%>
+				<h5 class="text"><%= link_to list.name,taste_path(list.id)%></h5>
+			<% elsif params[:controller]=="publics/matures"%>
+				<h5 class="text"><%= link_to list.name,mature_path(list.id)%></h5>
+			<% end %>
+		</div>
+	</div>
+	<% end%>
+</div>

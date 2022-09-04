@@ -1,0 +1,5 @@
+<%= form_with model: @mature,url:admins_mature_path(@mature.id),method: :patch do |f| %>
+	<%= f.file_field :image %>
+	<%= f.text_field :name %>
+	<%= f.submit %>
+<% end %>

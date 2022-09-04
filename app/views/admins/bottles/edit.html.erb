@@ -1,0 +1,51 @@
+<div class="bottle-edit">
+	<div class="bottle-edit-form">
+		<%= form_with model: @bottle,url:admins_bottle_path(@bottle.id),method: :patch do |f| %>
+			<%= f.file_field :image %>
+			<h5><%= f.label :ボトル名%></h5>
+			<%= f.text_field :name%>
+			<h5><%= f.label :説明%></h5>
+			<%= f.text_area :explanation%>
+			<h5><%= f.label :熟成年数%></h5>
+			<%= f.text_field :age%>
+			<h5><%= f.label :オプションnnnシェリー樽熟成など%></h5>
+			<%= f.text_field :option%>
+			<h5><%= f.label :価格%></h5>
+			<%= f.text_field :price%>
+			<h5><%= f.label :エリアid%></h5>
+			<%= f.text_field :area_id%>
+			<h5><%= f.label :熟成id%></h5>
+			<%= f.text_field :mature_id%>
+			<p><%= f.submit %></p>
+		<% end %>
+	</div>
+	<div class="other-bottles">
+		<table>
+			<tr>
+				<th>ボトル名</th>
+				<th>フォロー</th>
+			</tr>
+			<%@bottles.each do |bottle|%>
+				<tr>
+					<td><%=bottle.name%></td>
+					<%if @bottle.following?(bottle)%>
+						<td>
+							<%= form_with model:@bottle.relationships.find_by(recommended_bottle_id:bottle.id), url:admins_recommendation_bottle_path(bottle.id), method: :delete do |f| %>
+								<%= hidden_field_tag :original_bottle_id, @bottle.id %>
+								<%= f.submit 'Unfollow'%>
+							<%end%>
+						</td>
+					<%else%>
+						<td>
+							<%= form_with url:admins_recommendation_bottles_path do |f|%>
+								<%= hidden_field_tag :original_bottle_id, @bottle.id %>
+								<%= hidden_field_tag :recommended_bottle_id, bottle.id %>
+								<%= f.submit 'follow'%>
+							<%end%>
+						</td>
+					<%end%>
+				</tr>
+			<%end%>
+		</table>
+	</div>
+</div>

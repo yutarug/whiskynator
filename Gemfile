@@ -79,7 +79,8 @@ gem "pry-rails"
 # gem "refile-mini_magick"
 gem 'image_processing'
 gem 'mini_magick'
-
+gem 'devise'
 group :production do
   gem 'pg'
 end
+gem "aws-sdk-s3", require: false

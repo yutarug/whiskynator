@@ -1,0 +1,80 @@
+<div class="admin_edit_models">
+	<div class="admin_edit_models_new">
+
+		<% if params[:controller]=="admins/bottles"%>
+		<h3>New Bottle</h3>
+			<%= form_with model:new_list,url:"/admins/bottles" do|f| %>
+				<%= f.file_field :image %>
+				<h5><%= f.label :ボトル名%></h5>
+				<%= f.text_field :name%>
+				<h5><%= f.label :説明%></h5>
+				<%= f.text_area :explanation%>
+				<%= f.submit %>
+			<% end %>
+		<% elsif params[:controller]=="admins/tastes" %>
+			<h3>New Taste</h3>
+			<%= form_with model:new_list,url:"/admins/tastes" do|f| %>
+				<%= f.file_field :image %>
+				<h5><%= f.label :香り%></h5>
+				<%= f.text_field :name%>
+				<h5><%= f.label :説明%></h5>
+				<%= f.text_area :explanation%>
+				<%= f.submit %>
+			<% end %>
+		<% elsif params[:controller]=="admins/areas" %>
+			<h3>New Area</h3>
+			<%= form_with model:new_list,url:"/admins/areas" do|f| %>
+				<%= f.file_field :image %>
+				<h5><%= f.label :地域名%></h5>
+				<%= f.text_field :name%>
+				<h5><%= f.label :説明%></h5>
+				<%= f.text_area :explanation%>
+				<%= f.submit %>
+			<% end %>
+		<% elsif params[:controller]=="admins/tags" %>
+			<h3>New Tag</h3>
+			<%= form_with model:new_list,url:"/admins/tags" do|f| %>
+				<%= f.file_field :image %>
+				<h5><%= f.label :タグ名%></h5>
+				<%= f.text_field :name%>
+				<h5><%= f.label :説明%></h5>
+				<%= f.text_area :explanation%>
+				<%= f.submit %>
+			<% end %>
+		<% elsif params[:controller]=="admins/matures" %>
+			<h3>New Mature</h3>
+			<%= form_with model:new_list,url:"/admins/matures" do|f| %>
+				<%= f.file_field :image %>
+				<h5><%= f.label :香り%></h5>
+				<%= f.text_field :name%>
+				<%= f.submit %>
+			<% end %>
+		<% end %>
+	</div>
+
+
+
+	<div class="admin_edit_model">
+		<% lists.each do |list| %>
+		<div class="admin_edit_model_each_list">
+
+			<% if params[:controller]=="admins/bottles" %>
+				<%= link_to list.name,edit_admins_bottle_path(list.id)%>
+				<%= button_to "#{list.name}削除",admins_bottle_path(list.id),method: :delete%>
+			<% elsif params[:controller]=="admins/tastes" %>
+				<%= link_to list.name,edit_admins_taste_path(list.id)%>
+				<%= button_to "#{list.name}削除",admins_taste_path(list.id),method: :delete%>
+			<% elsif params[:controller]=="admins/areas" %>
+				<%= link_to list.name,edit_admins_area_path(list.id)%>
+				<%= button_to "#{list.name}削除",admins_area_path(list.id),method: :delete%>
+			<% elsif params[:controller]=="admins/tags" %>
+				<%= link_to list.name,edit_admins_tag_path(list.id)%>
+				<%= button_to "#{list.name}削除",admins_tag_path(list.id),method: :delete%>
+			<% elsif params[:controller]=="admins/matures" %>
+				<%= link_to list.name,edit_admins_mature_path(list.id)%>
+				<%= button_to "#{list.name}削除",admins_mature_path(list.id),method: :delete%>
+			<% end %>
+		</div>
+		<% end %>
+	</div>
+</div>

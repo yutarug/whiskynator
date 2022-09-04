@@ -1,0 +1,67 @@
+<div class="admin_bottles_index">
+	<div class="admin_bottles_index_foreign_keys">
+		<div class="admin_bottles_index_area_id">
+			<h3 class="text">エリアid</h3>
+				<div class="area_id_box">
+					<table>
+						<tr>
+							<th>エリアid</th>
+							<th>地域名</th>
+						</tr>
+						<% @areas.each do |area| %>
+							<tr>
+								<td><%= area.id%></td>
+								<td><%= area.name%></td>
+							</tr>
+						<% end %>
+					</table>
+				</div>
+		</div>
+		<div class="admin_bottles_index_mature_id">
+			<h3 class="text">熟成id</h3>
+				<div class="mature_id_box">
+					<table>
+						<tr>
+							<th>熟成id</th>
+							<th>熟成年数</th>
+						</tr>
+						<% @matures.each do |mature| %>
+							<tr>
+								<td><%= mature.id%></td>
+								<td><%= mature.name%></td>
+							</tr>
+						<% end %>
+					</table>
+				</div>
+		</div>
+	</div>
+	<div class="admin_bottles_index_new">
+		<h3>New Bottle</h3>
+			<%= form_with model:@new_bottle,url:"/admins/bottles" do|f| %>
+				<%= f.file_field :image %>
+				<h5><%= f.label :ボトル名%></h5>
+				<%= f.text_field :name%>
+				<h5><%= f.label :説明%></h5>
+				<%= f.text_area :explanation%>
+				<h5><%= f.label :熟成年数%></h5>
+				<%= f.text_field :age%>
+				<h5><%= f.label :オプションnnnシェリー樽熟成など%></h5>
+				<%= f.text_field :option%>
+				<h5><%= f.label :価格%></h5>
+				<%= f.text_field :price%>
+				<h5><%= f.label :エリアid%></h5>
+				<%= f.text_field :area_id%>
+				<h5><%= f.label :熟成id%></h5>
+				<%= f.text_field :mature_id%>
+				<p><%= f.submit %></p>
+			<% end %>
+	</div>
+	<div class="admin_edit_model">
+		<% @bottles.each do |bottle| %>
+		<div class="admin_edit_model_each_list">
+				<%= link_to bottle.name,edit_admins_bottle_path(bottle.id)%>
+				<%= button_to "#{bottle.name}削除",admins_bottle_path(bottle.id),method: :delete%>
+		</div>
+		<% end %>
+	</div>
+</div>

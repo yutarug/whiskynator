@@ -10,6 +10,7 @@
     <%= javascript_importmap_tags %>
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn rel="stylesheet">
   </head>
 
   <body>
@@ -18,11 +19,10 @@
         <h1 class="menu-name text"><%=link_to "Bar Bronks",root_path, class: "menu-name-link"%></h1>
       </div>
       <div class="address-information">
-        <p class="address-information-text text">〒650-0025 神戸市中央区相生町2丁目2-14 新神戸ビルB1F</p>
+        <p class="address-information-text text">TEL:078-362-2727</p>
       </div>
       <div class="search-space">
           <h1 class="search-title text">Whisky Menu</h3>
-          <p class="search-text text">あああ</p>
           <div class="form-space">
               <%= form_with url: "searched_word",method: :get do |f| %>
                   <div class="form-text_field">
