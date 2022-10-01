@@ -6,7 +6,7 @@ class CreateBottles < ActiveRecord::Migration[7.0]
       t.integer :age
       t.string :option
       t.string :image
-      t.string :introduction
+      t.text :introduction
       t.timestamps
     end
   end
