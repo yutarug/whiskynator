@@ -105,7 +105,7 @@
    border-radius: 50%;
 }
 .search-by-taste-image{
-   background-image: url(resized_price.png);
+   background-image: url(ruslan-zh-t0ZfzT8FopE-unsplash.jpg);
    position: relative;
 }
 .image-box{
@@ -130,7 +130,7 @@
 /*   background-color: hotpink;*/
 }
 .search-by-area-image{
-   background-image: url(resized_price.png);
+   background-image: url(honey-yanibel-minaya-cruz-6gSyEKq4Pvg-unsplash.jpg);
    position: relative;
 }
 .search-by-area-text{
@@ -140,17 +140,17 @@
 .search-way-space-second-stage{
    width: 100%;
 }
-.range-of-price{
+.range-of-mature{
    width: 50%;
    height: 150px;
    margin: 0 auto;
 /*   background-color: orangered;*/
 }
-.range-of-price-image{
-   background-image: url(resized_price.png);
+.range-of-mature-image{
+   background-image: url(yoann-donze-30A9bxBjWiw-unsplash.jpg);
    position: relative;
 }
-.range-of-price-text{
+.range-of-mature-text{
    color: black;
    text-decoration: none;
 }
