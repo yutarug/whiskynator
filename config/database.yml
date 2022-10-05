@@ -21,10 +21,14 @@ test:
   database: db/test.sqlite3
 
 production:
+  <<: *default
   # database: db/production.sqlite3
-  adapter: postgresql
-  database: whiskynator
-  encoding: utf8
-  username: postgres
-  password: Cxy3t2Sh
-  host: vagrant
+  # adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
+  # database: de2b9km7korgko
+  # encoding: utf8
+  username: lammxmknstrhpw
+  password: 488b8345987a9cfe82c396892e2b39a33e1f895ea2a4141eb832f6d07a14fa9b
+  # host: ec2-3-224-184-9.compute-1.amazonaws.com
+  # pool: 5
+  # port: 5432
