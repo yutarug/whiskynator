@@ -256,7 +256,7 @@
 .taste-image{
    width: 300px;
    height: 200px;
-   background-image:  url(resized_price.png);
+/*   background-image:  url(resized_price.png);*/
    margin: 0 auto;
 }
 .taste-area-text{
