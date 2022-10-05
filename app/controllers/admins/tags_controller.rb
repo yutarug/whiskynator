@@ -16,12 +16,12 @@ before_action :authenticate_admin!
 	def update
 		@tag=Tag.find(params[:id])
         @tag.update(tag_params)
-        redirect_to admins_tag_path
+        redirect_to admins_tags_path
 	end
 	def destroy
 		@tag=Tag.find(params[:id])
 		@tag.destroy
-		redirect_to admins_tag_path
+		redirect_to admins_tags_path
 	end
 	private
     def tag_params
