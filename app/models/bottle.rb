@@ -5,10 +5,10 @@ class Bottle < ApplicationRecord
     # belongs_to :range_of_price
     belongs_to :mature
 
-    has_many :bottle_tags
+    has_many :bottle_tags, dependent: :destroy
     has_many :tags,through: :bottle_tags
 
-    has_many :bottle_tastes
+    has_many :bottle_tastes, dependent: :destroy
     has_many :tastes,through: :bottle_tastes
 
     has_many :relationships, class_name:"RecommendationBottle",foreign_key:"original_bottle_id",dependent: :destroy

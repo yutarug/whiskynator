@@ -281,7 +281,7 @@
 .bottle-photo{
    width: 125px;
    height: 150px;
-   background-image:  url(resized_price.png);
+/*   background-image:  url(resized_price.png);*/
    margin: 0 auto 0;
 }
 
