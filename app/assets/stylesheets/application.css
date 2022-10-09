@@ -478,3 +478,9 @@
    height: 100px;
 }
 
+@media screen and (max-width: 1242px) {
+   .bottle-show-image{
+      width: 370px;
+   }
+}
+
