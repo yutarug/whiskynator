@@ -1,7 +1,7 @@
 <div class="bottle-show-space">
 	<div class="bottle-show-image">
 <!-- 		本当はimage_processingでリサイズしたいがrails7ではruby-vipsとか使ったほうがいいとかややこしいので一旦画像の投稿自体を縮小してやる。(横250px,縦300px) -->
-		<%= image_tag @bottle.image.variant(resize:"250x350")%>
+		<%= image_tag @bottle.image,class="abc"%>
 	</div>
 	<div class="bottle-show-discription">
 		<h3 class="bottle-show-name text"><%= @bottle.name%></h3>
