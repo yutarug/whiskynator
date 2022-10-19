@@ -319,7 +319,12 @@
    width: 50%;
    margin: 0 auto;
 }
-
+.bottle-show-explanation{
+   width: 250px;
+   margin: 0 auto;
+   overflow-wrap: break-word;
+   word-break: break-word;
+}
 .bottle-follow{
    width: 100%;
 /*   background-color: hotpink;*/
@@ -327,6 +332,7 @@
    flex-wrap: wrap;
 
 }
+
 .bottle-show-recommending-bottle{
    width: 50%;
    height: 100px;
@@ -351,7 +357,7 @@
 .areas-space-area{
    width: 50%;
    height: 200px;
-   background-color: red;
+/*   background-color: red;*/
 }
 .areas-space-area:nth-child(3n){
 /*   background-color: green;*/
@@ -360,13 +366,13 @@
    width: 212px;
    height: 200px;
    margin: 0 auto;
-   background-color: yellow;
+/*   background-color: yellow;*/
 }
 .areas-space-area-box-image{
    width: 212px;
    height: 150px;
    margin: 0 auto;
-   background-color: blue;
+/*   background-color: blue;*/
 /*   background-image: url(resized_whisky_photo.png);*/
 }
 .areas_image_content{

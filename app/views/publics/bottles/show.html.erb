@@ -7,7 +7,7 @@
 		<h3 class="bottle-show-name text"><%= @bottle.name%></h3>
 		<p class="bottle-show-price text"><%= @bottle.price%>円</p>
 		<p class="bottle-show-area text"><%= @bottle.area.name%></p>
-		<p class="bottle-show-explanation text"><%= @bottle.explanation%></p>
+		<div class="bottle-show-explanation text"><%= @bottle.explanation%></p>
 	</div>
 	<%= render 'bottles/under_bottles', bottles: @recommending_bottles %>
 </div>
