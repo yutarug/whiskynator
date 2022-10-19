@@ -351,26 +351,28 @@
 .areas-space-area{
    width: 50%;
    height: 200px;
+   background-color: red;
 }
 .areas-space-area:nth-child(3n){
 /*   background-color: green;*/
 }
 .areas-space-area-box{
-   width: 250px;
+   width: 212px;
    height: 200px;
    margin: 0 auto;
+   background-color: yellow;
 }
 .areas-space-area-box-image{
-   width: 250px;
+   width: 212px;
    height: 150px;
    margin: 0 auto;
-/*   background-color: red;*/
+   background-color: blue;
 /*   background-image: url(resized_whisky_photo.png);*/
 }
 .areas_image_content{
    width: 150px;
    height: 150px;
-   margin: 0px 50px;
+   margin: 0px 31px;
 }
 #mature_image_1{
    background-image: url(resized_whisky_photo.png);
