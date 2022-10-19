@@ -2,7 +2,7 @@
 	<% bottles.each do |bottle|%>
 		<div class="bottle-image">
 			<div class="bottle-photo">
-				<%= image_tag bottle.image.variant(resize:"125x150")%>
+				<%= image_tag bottle.image,class:"bottle-photo-content"%>
 			</div>
 			<p class="text"><%=link_to bottle.name,bottle_path(bottle.id)%></p>
 		</div>

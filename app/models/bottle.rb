@@ -1,6 +1,8 @@
 class Bottle < ApplicationRecord
-    validate :area_id
-    validate :mature_id
+    validates :name, presence: true
+    validates :image, attached: true
+    validates :area_id, presence: true
+    validates :mature_id, presence: true
     has_one_attached :image
 
     belongs_to :area

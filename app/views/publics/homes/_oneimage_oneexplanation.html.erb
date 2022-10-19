@@ -1,9 +1,11 @@
 <div class="taste-area">
 	<div class="taste-image">
-		<%= image_tag list.image.variant(resize:"250x350"),class:"pink"%>
+		<%= image_tag list.image,class:"taste-image-content"%>
 	</div>
 	<h3 class="text"><%= list.name%></h3>
 	<div class="taste-area-text">
-		<p class="text"><%= list.explanation%></p>
+		<%if not list.explanation==nil %>
+			<p class="text"><%= list.explanation%></p>
+		<%end%>
 	</div>
 </div>

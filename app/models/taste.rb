@@ -1,4 +1,6 @@
 class Taste < ApplicationRecord
+	validates :name, presence: true
+	validates :image, attached: true
 	has_one_attached :image
 
 	has_many :bottle_tastes, dependent: :destroy

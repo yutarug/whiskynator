@@ -259,7 +259,9 @@
 /*   background-image:  url(resized_price.png);*/
    margin: 0 auto;
 }
-.pink{
+.taste-image-content{
+   width: 250px;
+   height: 350px;
    margin: 0 auto;
 }
 .taste-area-text{
@@ -272,6 +274,7 @@
    display: flex;
    flex-wrap: wrap;
    margin: 20px 0 0 0;
+/*   background-color: red;*/
 }
 .bottle-image{
    width: 50%;
@@ -286,8 +289,12 @@
    height: 150px;
 /*   background-image:  url(resized_price.png);*/
    margin: 0 auto 0;
+/*   background-color: red;*/
 }
-
+.bottle-photo-content{
+   width: 125px;
+   height: 150px;
+}
 .bottle-show-space{
    width: 100%;
 /*   background-color: blue;*/
@@ -296,6 +303,10 @@
    width:250px;
    height: 350px;
    margin: 0 auto;
+}
+.bottle-show-image-content{
+   width: 250px;
+   height:350px;
 }
 .abc{
    margin: 0 auto;
@@ -333,7 +344,6 @@
 
 .areas-space{
    width: 100%;
-/*   background-color: blue;*/
    display: flex;
    flex-wrap: wrap;
 }
@@ -341,7 +351,6 @@
 .areas-space-area{
    width: 50%;
    height: 200px;
-/*   background-color: yellow;*/
 }
 .areas-space-area:nth-child(3n){
 /*   background-color: green;*/
@@ -350,7 +359,6 @@
    width: 250px;
    height: 200px;
    margin: 0 auto;
-/*   background-color: pink;*/
 }
 .areas-space-area-box-image{
    width: 250px;
@@ -358,6 +366,11 @@
    margin: 0 auto;
 /*   background-color: red;*/
 /*   background-image: url(resized_whisky_photo.png);*/
+}
+.areas_image_content{
+   width: 150px;
+   height: 150px;
+   margin: 0px 50px;
 }
 #mature_image_1{
    background-image: url(resized_whisky_photo.png);

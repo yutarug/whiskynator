@@ -3,7 +3,7 @@
 	<div class="areas-space-area">
 		<div class="areas-space-area-box">
 			<div class="areas-space-area-box-image">
-				<%= image_tag list.image.variant(resize:"250x150")%>
+				<%= image_tag list.image,class:"areas_image_content"%>
 			</div>
 			<% if params[:controller]=="publics/areas"%>
 				<h5 class="text"><%= link_to list.name,area_path(list.id)%></h5>

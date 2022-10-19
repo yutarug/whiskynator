@@ -42,13 +42,13 @@ Rails.application.routes.draw do
   end
 
   scope module: :publics do
+    get "searched_word",to:"tags#searched_word"
     resources :bottles, only:[:index,:show]
     resources :areas, only:[:index,:show]
     resources :tastes, only:[:index,:show]
     resources :tags, only:[:index,:show]
     resources :matures, only:[:index,:show]
     resources :bottles, only:[:index,:show]
-    get "searched_word",to:"tags#searched_word"
   end
 
 

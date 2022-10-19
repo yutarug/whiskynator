@@ -24,7 +24,7 @@
       <div class="search-space">
           <h1 class="search-title text">Whisky Menu</h3>
           <div class="form-space">
-              <%= form_with url: "searched_word",method: :get do |f| %>
+              <%= form_with url: searched_word_path,method: :get do |f| %>
                   <div class="form-text_field">
                       <%= f.text_field :search_word,class:"form-text_field_field",:placeholder => "Search anything..."%>
                   </div>
