@@ -4,9 +4,9 @@
 		<%= image_tag @bottle.image,class:"bottle-show-image-content"%>
 	</div>
 	<div class="bottle-show-discription">
-		<h3 class="bottle-show-name text"><%= @bottle.name%></h3>
-		<p class="bottle-show-price text"><%= @bottle.price%>円</p>
-		<p class="bottle-show-area text"><%= @bottle.area.name%></p>
+		<p class="bottle-show-name text"><%= @bottle.name%></h3>
+		<p class="bottle-show-price text">価格:<%= @bottle.price%>円</p>
+		<p class="bottle-show-area text">地域:<%= link_to @bottle.area.name,area_path(@bottle.area.id)%></p>
 		<div class="bottle-show-explanation text"><%= @bottle.explanation%></p>
 	</div>
 	<%= render 'bottles/under_bottles', bottles: @recommending_bottles %>
