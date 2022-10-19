@@ -9,5 +9,5 @@
 		<p class="bottle-show-area text">地域:<%= link_to @bottle.area.name,area_path(@bottle.area.id)%></p>
 		<div class="bottle-show-explanation text"><%= @bottle.explanation%></p>
 	</div>
-	<%= render 'bottles/under_bottles', bottles: @recommending_bottles %>
+		<%= render 'bottles/under_bottles', bottles: @recommending_bottles %>
 </div>
