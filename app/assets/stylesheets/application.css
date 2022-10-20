@@ -26,15 +26,14 @@
 /*   background-image: url(whisky_wall.png);
    height: 800px;
    background0size: cover;*/
-   height: 896px;
+   height: 100vh;
 /*   background-color: blue;*/
    position: relative;
 }
 .under-contents{
    position: absolute;
    bottom: 0;
-   height: 160px;
-   background-color: green;
+/*   background-color: green;*/
    width: 100%;
 }
 .text{
@@ -100,8 +99,6 @@
    text-align: center;
 }
 .low-brown-color{
-   position: absolute;
-   bottom: 0;
    width: 100%;
    height: 80px;
    background-color:  #33100a;
@@ -182,8 +179,6 @@
    width: 100%;
    height: 80px;
    background-color: #fcc41c;
-   position: absolute;
-   bottom: 80px;
 /*   color: white;*/
 }
 
