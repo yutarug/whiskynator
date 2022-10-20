@@ -26,6 +26,16 @@
 /*   background-image: url(whisky_wall.png);
    height: 800px;
    background0size: cover;*/
+   height: 896px;
+/*   background-color: blue;*/
+   position: relative;
+}
+.under-contents{
+   position: absolute;
+   bottom: 0;
+   height: 160px;
+   background-color: green;
+   width: 100%;
 }
 .text{
    text-align: center;
@@ -73,6 +83,10 @@
 .search-text{
    font-family: 'IM Fell DW Pica SC', serif;
 }
+.whisky_menu{
+   text-decoration: none;
+   color: black;
+}
 .form-space{
    width: 100%;
 }
@@ -85,7 +99,13 @@
    margin: 0 auto;
    text-align: center;
 }
-
+.low-brown-color{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 80px;
+   background-color:  #33100a;
+}
 .search-way-space{
    width: 100%;
    height: 300px;
@@ -160,8 +180,10 @@
 }
 .about-Bronks{
    width: 100%;
-   height: 300px;
+   height: 80px;
    background-color: #fcc41c;
+   position: absolute;
+   bottom: 80px;
 /*   color: white;*/
 }
 

@@ -22,7 +22,7 @@
         <p class="address-information-text text">TEL:078-362-2727</p>
       </div>
       <div class="search-space">
-          <h1 class="search-title text">Whisky Menu</h3>
+          <h1 class="search-title text"><%=link_to "Whisky Menu",root_path,class:"whisky_menu"%></h3>
           <div class="form-space">
               <%= form_with url: searched_word_path,method: :get do |f| %>
                   <div class="form-text_field">
@@ -32,6 +32,13 @@
           </div>
       </div>
       <%= yield %>
+      <div class="under-contents">
+        <div class="about-Bronks">
+          <h2 class="about-Bronks-title text">About Bronks</h2>
+          <p class="about-Bronks-text text">〒650-0025 神戸市中央区相生町2丁目2-14 新神戸ビルB1F</p>
+        </div>
+        <div class="low-brown-color"></div>
+      </div>
     </div>
   </body>
 </html>
