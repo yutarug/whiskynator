@@ -1,10 +1,19 @@
 <div class="bottle-edit">
 	<div class="bottle-edit-form">
-		<%= form_with model: list,url:admins_tag_path(list.id),method: :patch do |f| %>
-			<%= f.file_field :image %>
-			<%= f.text_field :name %>
-			<%= f.text_area :explanation%>
-			<%= f.submit %>
+		<%if params[:controller]=="admins/tags"%>
+			<%= form_with model: list,url:admins_tag_path(list.id),method: :patch do |f| %>
+				<%= f.file_field :image %>
+				<%= f.text_field :name %>
+				<%= f.text_area :explanation%>
+				<%= f.submit %>
+			<% end %>
+		<%elsif params[:controller]=="admins/tastes"%>
+			<%= form_with model: list,url:admins_taste_path(list.id),method: :patch do |f| %>
+				<%= f.file_field :image %>
+				<%= f.text_field :name %>
+				<%= f.text_area :explanation%>
+				<%= f.submit %>
+			<% end %>
 		<% end %>
 	</div>
 	<div class="other-bottles">
