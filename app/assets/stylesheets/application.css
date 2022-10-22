@@ -385,6 +385,7 @@ footer{
    width: 100%;
    display: flex;
    flex-wrap: wrap;
+   margin: 0 0 120px;
 }
 
 .areas-space-area{
@@ -465,8 +466,8 @@ footer{
 
 .admin_edit_models{
    width: 100%;
-   height: 100px;
-/*   background-color: blue;*/
+/*   height: 100px;*/
+   margin: 0 0 150px;
 }
 .admin_edit_model{
    width: 400px;
