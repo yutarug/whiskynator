@@ -5,6 +5,11 @@
 	</div>
 	<div class="bottle-show-discription">
 		<p class="bottle-show-name text"><%= @bottle.name%></h3>
+		<div class="tags-content">
+			<%@tags.each do |tag|%>
+				<%= link_to "##{tag.name}",tag_path(tag.id),class:"tag-class"%>
+			<%end%>
+		</div>
 		<p class="bottle-show-price text">価格:<%= @bottle.price%>円</p>
 		<p class="bottle-show-area text">地域:<%= link_to @bottle.area.name,area_path(@bottle.area.id)%></p>
 		<div class="bottle-show-explanation"><%= simple_format(@bottle.explanation)%></p>

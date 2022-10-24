@@ -335,6 +335,16 @@ footer{
    height: 350px;
    margin: 0 auto;
 }
+.tags-content{
+   width: 250px;
+/*   height: 100px;*/
+   margin: 0 auto;
+/*   background-color: #00829f;*/
+}
+.tag-class{
+   text-decoration:  none;
+   font-style: oblique;
+}
 .bottle-show-image-content{
    width: 250px;
    height:350px;
@@ -490,7 +500,7 @@ footer{
    margin: 0 auto;
    display: flex;
    flex-wrap: wrap;
-   background-color: red;
+/*   background-color: red;*/
    margin: 0 0 500px;
 }
 .bottle-edit-form{
