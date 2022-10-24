@@ -491,7 +491,7 @@ footer{
    display: flex;
    flex-wrap: wrap;
    background-color: red;
-   margin: 0 0 100px;
+   margin: 0 0 500px;
 }
 .bottle-edit-form{
    width: 50%;
